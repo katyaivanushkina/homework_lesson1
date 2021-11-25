@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -84,7 +84,149 @@
 .filter_content{
     max-width: 83px;
 }
+
+.aside{
+    background: #222224;
+    height: 341px;
+}
+.meta{
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+}
+.meta_text {
+    font-size: 19.96px;
+    line-height: 24px;
+    color: #FBFBFB;
+    text-align: center;
+    margin-bottom: 16px;
+}
+.meta_paragraph {
+    font-size: 13.972px;
+    line-height: 17px;
+    color: #FBFBFB;
+    text-align: center;
+}
+.aside {
+    padding-top: 104px;
+    padding-bottom: 104px;
+}
+.feedback{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.img_card{
+    align-self: center;
+    margin-bottom: 28px;align-self: center;
+    margin-bottom: 28px;
+    justify-content: center;
+    align-items: center;
+}
+
+.more{
+    background: #eaeae75e;
+    background-size: cover;
+}
+.more_description {
+    display: flex;
+    justify-content: center;
+    
+}
+.img_more {
+    padding-bottom: 50px;
+}
+.more_heading {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+    padding-bottom: 12px;
+}
+.line{
+    border-bottom: 3px solid #F16D7F;
+}
+.more_txt {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #4D4D4D;
+    padding-top: 12px;
+    padding-bottom: 48px;
+}
+.more_paragraph{
+    display: flex;
+    width: 595px;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+.price{
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #EF5B70;
+    padding-top: 32px;
+
+}
+.container_description{
+    position: relative;
+}
+.more_container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 1140px;
+    outline: 1px solid #EAEAEA;
+    background: white;
+    padding-top: 64px;
+    margin-top: -50px;
+}
+
+.more_container:hover {
+    box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
+  }
+.line{
+    margin-left: 188px;
+    margin-right: 250px;
+}
+.hr{
+    opacity: 0.4;
+    width: 641px;
+    margin-bottom: 65px;
+    margin-top: 65px;
+}
+.filter_more{
+    padding-top: 64px;
+    width: 377px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 95px;
+    margin-top: 48px;
+}
+.top_button{
+    text-decoration: none;
+    display: flex;
+    margin-top: 86 px;
+    border: 1px solid #F26376;
+    color: #F26376;
+    background: white;
+    padding: 11px 27px;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    width: 192px;
+}
+}
 .main{
+    margin-top: 96px;
+}
+.main_product{
     margin-top: 96px;
 }
 .main_text{
@@ -106,6 +248,11 @@
     justify-content: space-around;
     flex-wrap: wrap;
 }
+.card_more{
+    margin-top: 128px;
+    margin-bottom: 128px;
+}
+
 .card_content {
     width: 360px;
     margin: 5px;
@@ -114,6 +261,7 @@
     padding-bottom: 10px;
     position: relative;
     transition: 0.5s;
+    background: #F8F8F8;
 }
 .card_content:hover {
     box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
@@ -161,44 +309,8 @@
     line-height: 19px;
     color: #F16D7F;
 }
-.aside{
-    background: #222224;
-    height: 341px;
-}
-.meta{
-    width: 360px;
-    display: flex;
-    flex-direction: column;
-}
-.meta_text {
-    font-size: 19.96px;
-    line-height: 24px;
-    color: #FBFBFB;
-    text-align: center;
-    margin-bottom: 16px;
-}
-.meta_paragraph {
-    font-size: 13.972px;
-    line-height: 17px;
-    color: #FBFBFB;
-    text-align: center;
-}
-.aside {
-    padding-top: 104px;
-    padding-bottom: 104px;
-}
-.feedback{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.img_card{
-    align-self: center;
-    margin-bottom: 28px;align-self: center;
-    margin-bottom: 28px;
-    justify-content: center;
-    align-items: center;
-}
+
+
 .container_background{
     height: 448px;
     background-image: url(img/footer/subscribe.png);
@@ -305,7 +417,7 @@
 }
 .test {
     font-size: 20px;
-    font-family: fontawesome !important;
+   font-family: fontawesome !important;
     padding: -1px -19px;
     background: white;
     padding: 5;
@@ -314,7 +426,7 @@
     text-decoration: none;
     margin-right: 5px;
 }
-
 .test:hover {
     background: #F16D7F;
 }
+
