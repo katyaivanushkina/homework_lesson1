@@ -1,0 +1,115 @@
+.order {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    &__container{
+        display: flex;
+        justify-content: space-between;
+    
+    }
+
+    &__card {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin-top: 96px;
+    }
+
+    &__clothes {
+        display: flex;
+        flex-flow: wrap;
+        margin-bottom: 40px;
+
+        &:hover{
+            box-shadow: 15px 20px 22px -9px rgba(0, 0, 0 , 0.27);
+        }
+    }
+
+    &__img{
+        height: 306px;
+    }
+
+    &__text{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-left: 31px;
+    }
+
+    &__topic{
+        font-size: 24px;
+        line-height: 29px;
+        color: #222222;
+        margin-bottom: 42px;
+        width: 222px;
+        height: 58px;
+    }
+
+    &__options{
+        font-size: 22px;
+        line-height: 26px;
+        color: #575757;
+    }
+
+    &__promo{
+        display: flex;
+        margin-bottom: 95px;
+        margin-top: 48px;
+        justify-content: space-between;
+        width: 652px;
+    }
+
+    &__button{
+        display: flex;
+        flex-direction: column;
+        margin-top: 113px;
+    }
+
+    &__adress{
+        align-items: flex-start;
+        display: flex;
+        flex-flow: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 360px;
+    }
+
+    &__form{
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #222222;
+        margin-bottom: 20px;
+    
+    }
+
+    &__price{
+        display: flex;
+        flex-direction: column;
+        width: 360px;
+        outline: 1px solid #EAEAEA;
+        background: #F5F3F3;
+        margin-top: 57px;
+        height: 214px;
+        text-align: right;
+
+    }
+    
+    
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
