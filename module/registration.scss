@@ -1,0 +1,68 @@
+.registration {
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 96px;
+ 
+    &__container{
+        display: flex;
+        justify-content: space-between;
+      }
+
+    &__name {
+         display: flex;
+         justify-content: space-between;
+         flex-direction: column;
+    }
+
+    &__field {
+        width: 360px;
+        margin-top: 64px;
+      }
+
+    &__option {
+        padding-bottom: 33px;
+        padding-top: 31px;
+      }
+
+    &__details {
+         width: 360px;
+        }
+
+     &__button {
+         display: flex;
+         justify-content: flex-start;
+         margin-top: 39px;
+        }
+
+     &__perks {
+        width: 652px;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        height: 334px;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 64px;
+         }
+  
+
+
+}
+
+
+
+
+
+
+
+  
+  
+ 
+
+

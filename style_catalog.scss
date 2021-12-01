@@ -2,6 +2,8 @@
 
 @import 'module/_header.scss';
 
+@import 'module/registration.scss';
+
 * {
     padding: 0;
     margin: 0;
@@ -387,9 +389,10 @@
             align-items: center;
     -webkit-transition: 0.5s;
     transition: 0.5s;
+    opacity: 0;
   }
   
-  .card_content:hover.overlay {
+  .card_content:hover .overlay {
     opacity: 1;
   }
   
@@ -720,6 +723,13 @@
       width: 275px;
       text-decoration: none;
   }
+  .paragraph_registrtion {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+  }
   
   .cost{
        display: flex;
@@ -747,9 +757,87 @@
     font-size: 16px;
     line-height: 19px;
     color: #222222;
-  
+  }
+   
+ 
+  .login_header{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+    font-family: 'Lato', sans-serif;
+    padding-bottom: 20px;
   }
 
+  .button_next{
+    margin-bottom: 31px;
+    height: 50px;
+    padding: 14px 29px;
+    border: 1px solid #A4A4A4;
+    border-radius: -2px;
+    background-color: #F16D7F;
+    width: 167px;
+    text-decoration: none;
+}
+
+.perks_heading{
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  font-family: 'Lato', sans-serif;
+  padding-bottom: 22px;
+}
+.perks_list{
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  font-family: 'Lato', sans-serif;
+  margin-top: 21px;
+  list-style-type: none;
+  font-family: fontawesome !important;
+  line-height: 1.8;
+}
+
+.perks_paragraph {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  font-family: 'Lato', sans-serif;
+}
   
+.box {
+    display: block;
+    -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
+    transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
+    transition: width 2s, height 2s, background-color 2s, transform 2s, -webkit-transform 2s;
+    animation: changeColor 4s ease-in 5 alternate,
+  move 4s ease-in 5 alternate;
+}
+
+
+.box:hover {
+  background-color: #f146be;
+  width: 360px;
+  height: 251px;
+  -webkit-transform: rotate(360deg);
+  transform: scale(0.1) (360deg);
+}
+
+.btn_animation{
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.btn_animation:hover {
+   background-color: #eed810;
+    width: 167px;
+    height: 50px;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(36000deg);transition-duration: 0.5s;
+}
+
   /*# sourceMappingURL=style_catalog.css.map */
 
