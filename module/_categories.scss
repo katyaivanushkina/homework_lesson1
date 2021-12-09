@@ -1,0 +1,58 @@
+
+
+.categories{
+    position: relative;
+    width: 296px;
+    margin: 15px 3px 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 296px;
+    margin-left: 357px;
+  
+      details{
+            position: relative;
+              }
+  
+      summary {
+        color: #626262;
+        display: block;
+        font-family: fontawesome !important;
+        position: relative;
+      }
+  
+      fieldset {
+        border: none;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+        width: 79px;
+        margin-left: 30px;
+        line-height: 1.5;
+        padding: 9px 28px 12px 11px;
+        width: 132px;
+        margin: 5px 3px 10px;
+        position: absolute;
+  
+      }
+  
+        
+  
+                &__size fieldset {
+                padding: 2px 11px;
+                box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+                padding: 33px -8px 18px 4px;
+                width: 65px;
+                position: absolute;
+          
+              }   
+      }
+
+  
+  
+    
+    

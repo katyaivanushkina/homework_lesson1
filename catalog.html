@@ -7,23 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style_catalog.css">
     <title>Document</title>
-    <script src="https://kit.fontawesome.com/14cc2b8501.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/28aa9b1bb7.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header class="header">
-        <div class="container header_wrap">
+        <div class="container header__wrap">
             <div class="header_left">
-                <a class="header_logo" href="https://gb.ru/">
+                <a class="header__logo" href="https://gb.ru/">
                     <img src="img/header/logo.png" alt="">
                 </a>
                 <img src="img/header/logo1.png" alt="">
-
             </div>
             <div class="header_right">
-                <img class="header_item" src="img/header/logo2.png" alt="">
-                <img class="header_item" src="img/header/logo3.png" alt="">
-                <img class="header_item" src="img/header/logo4.png" alt="">
+                <img class="header__item" src="img/header/logo2.png" alt="">
+                <img class="header__item" src="img/header/logo3.png" alt="">
+                <button class="block_header">
+                    <div class="test_block ">
+                        5
+                    </div>
+                    <img class="header__item" src="img/header/logo4.png" alt="">
             </div>
         </div>
     </header>
@@ -37,25 +40,111 @@
                 </div>
             </div>
         </section>
-        <section class="filter">
-            <div class="container">
-                <div class="content">
-                    <div class="filter_content">
-                        <h4 class="filter_img">FILTER</h4>
-                    </div>
+        <div class="container">
+            <div class="catalog__filter filter">
+                <div class="filter__button">
+                    <details>
+                        <summary>Filter <i class=" fas fa-sort-amount-up"></i></use>
+                            </svg></summary>
+                        <div class="filter__body">
+                            <details>
+                                <summary>Category</summary>
+                                <ul>
+                                    <li><a href="#">Accessories</a></li>
+                                    <li><a href="#">Bags</a></li>
+                                    <li><a href="#">Denim</a></li>
+                                    <li><a href="#">Hoodies & Sweatshirts</a></li>
+                                    <li><a href="#">Jackets & Coats</a></li>
+                                    <li><a href="#">Polos</a></li>
+                                    <li><a href="#">Shirts</a></li>
+                                    <li><a href="#">Shoes</a></li>
+                                    <li><a href="#">Sweaters & Knits</a></li>
+                                    <li><a href="#">T-Shirts</a></li>
+                                    <li><a href="#">Tanks</a></li>
+                                </ul>
+                            </details>
+                            <details>
+                                <summary>Brand</summary>
+                                <ul>
+                                    <li><a href="#">Accessories</a></li>
+                                    <li><a href="#">Bags</a></li>
+                                    <li><a href="#">Denim</a></li>
+                                    <li><a href="#">Hoodies & Sweatshirts</a></li>
+                                    <li><a href="#">Jackets & Coats</a></li>
+                                    <li><a href="#">Polos</a></li>
+                                    <li><a href="#">Shirts</a></li>
+                                    <li><a href="#">Shoes</a></li>
+                                    <li><a href="#">Sweaters & Knits</a></li>
+                                    <li><a href="#">T-Shirts</a></li>
+                                    <li><a href="#">Tanks</a></li>
+                                </ul>
+                            </details>
+                            <details>
+                                <summary>Designer</summary>
+                                <ul>
+                                    <li><a href="#">Accessories</a></li>
+                                    <li><a href="#">Bags</a></li>
+                                    <li><a href="#">Denim</a></li>
+                                    <li><a href="#">Hoodies & Sweatshirts</a></li>
+                                    <li><a href="#">Jackets & Coats</a></li>
+                                    <li><a href="#">Polos</a></li>
+                                    <li><a href="#">Shirts</a></li>
+                                    <li><a href="#">Shoes</a></li>
+                                    <li><a href="#">Sweaters & Knits</a></li>
+                                    <li><a href="#">T-Shirts</a></li>
+                                    <li><a href="#">Tanks</a></li>
+                                </ul>
+                            </details>
+                        </div>
+                    </details>
+                </div>
+                <div class="filed_categories">
                     <div class="categories">
-                        <h4 class="categories_text">TRENDING NOW</h4>
-                        <h4 class="categories_text">SIZE </h4>
-                        <h4 class="categories_text">PRICE</h4>
+                        <details>
+                            <summary>TRENDING NOW<i class="fa-solid fa-check"></i>
+                            </summary>
+                            <fieldset>
+                                <input type="checkbox"> trend <br>
+                                <input type="checkbox"> classic <br>
+                                <input type="checkbox"> fashion <br>
+                            </fieldset>
+                        </details>
+                        <div class="categories__size">
+                            <details>
+                                <summary>SIZE<i class="fa-solid fa-check"></i></i>
+                                </summary>
+                                <fieldset>
+                                    <input type="checkbox"> XS<br>
+                                    <input type="checkbox"> S<br>
+                                    <input type="checkbox"> M <br>
+                                    <input type="checkbox"> L<br>
+                                </fieldset>
+                            </details>
+                        </div>
+                        <div class="categories__price">
+                            <details>
+                                <summary>PRICE<i class="fa-solid fa-check"></i></i>
+                                </summary>
+                                <fieldset>
+                                    <input type="checkbox"> LOW<br>
+                                    <input type="checkbox"> MED<br>
+                                    <input type="checkbox"> HIGT <br>
+                                </fieldset>
+                            </details>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
         <section class="main">
             <div class="container">
                 <div class="main_card">
                     <div class="card_content">
                         <img src="img/product/card1.jpg" alt="">
+                        <div class="overlay">
+                            <button class="overlay_btn"><img class="overlay_button" src="img/basket.png" alt="">Add to
+                                cart</button>
+                        </div>
                         <h3 class="main_text_card">ELLERY X M'O CAPSULE</h3>
                         <p class="main_paragraph_card">Known for her sculptural takes on traditional tailoring,
                             Australian
@@ -65,6 +154,10 @@
                     </div>
                     <div class="card_content">
                         <img src="img/product/card2.jpg" alt="">
+                        <div class="overlay">
+                            <button class="overlay_btn"><img class="overlay_button" src="img/basket.png" alt="">Add to
+                                cart</button>
+                        </div>
                         <h3 class="main_text_card">ELLERY X M'O CAPSULE</h3>
                         <p class="main_paragraph_card">Known for her sculptural takes on traditional tailoring,
                             Australian
@@ -74,6 +167,10 @@
                     </div>
                     <div class="card_content">
                         <img src="img/product/card3.jpg" alt="">
+                        <div class="overlay">
+                            <button class="overlay_btn"><img class="overlay_button" src="img/basket.png" alt="">Add to
+                                cart</button>
+                        </div>
                         <h3 class="main_text_card">ELLERY X M'O CAPSULE</h3>
                         <p class="main_paragraph_card">Known for her sculptural takes on traditional tailoring,
                             Australian
@@ -83,6 +180,10 @@
                     </div>
                     <div class="card_content">
                         <img src="img/product/card4.jpg" alt="">
+                        <div class="overlay">
+                            <button class="overlay_btn"><img class="overlay_button" src="img/basket.png" alt="">Add to
+                                cart</button>
+                        </div>
                         <h3 class="main_text_card">ELLERY X M'O CAPSULE</h3>
                         <p class="main_paragraph_card">Known for her sculptural takes on traditional tailoring,
                             Australian
@@ -92,6 +193,10 @@
                     </div>
                     <div class="card_content">
                         <img src="img/product/card5.jpg" alt="">
+                        <div class="overlay">
+                            <button class="overlay_btn"><img class="overlay_button" src="img/basket.png" alt="">Add to
+                                cart</button>
+                        </div>
                         <h3 class="main_text_card">ELLERY X M'O CAPSULE</h3>
                         <p class="main_paragraph_card">Known for her sculptural takes on traditional tailoring,
                             Australian
@@ -101,6 +206,10 @@
                     </div>
                     <div class="card_content">
                         <img src="img/product/card6.jpg" alt="">
+                        <div class="overlay">
+                            <button class="overlay_btn"><img class="overlay_button" src="img/basket.png" alt="">Add to
+                                cart</button>
+                        </div>
                         <h3 class="main_text_card">ELLERY X M'O CAPSULE</h3>
                         <p class="main_paragraph_card">Known for her sculptural takes on traditional tailoring,
                             Australian
@@ -110,6 +219,10 @@
                     </div>
                     <div class="card_content">
                         <img src="img/product/card7.jpg" alt="">
+                        <div class="overlay">
+                            <button class="overlay_btn"><img class="overlay_button" src="img/basket.png" alt="">Add to
+                                cart</button>
+                        </div>
                         <h3 class="main_text_card">ELLERY X M'O CAPSULE</h3>
                         <p class="main_paragraph_card">Known for her sculptural takes on traditional tailoring,
                             Australian
@@ -119,6 +232,10 @@
                     </div>
                     <div class="card_content">
                         <img src="img/product/card8.jpg" alt="">
+                        <div class="overlay">
+                            <button class="overlay_btn"><img class="overlay_button" src="img/basket.png" alt="">Add to
+                                cart</button>
+                        </div>
                         <h3 class="main_text_card">ELLERY X M'O CAPSULE</h3>
                         <p class="main_paragraph_card">Known for her sculptural takes on traditional tailoring,
                             Australian
@@ -128,6 +245,10 @@
                     </div>
                     <div class="card_content">
                         <img src="img/product/card9.jpg" alt="">
+                        <div class="overlay">
+                            <button class="overlay_btn"><img class="overlay_button" src="img/basket.png" alt="">Add to
+                                cart</button>
+                        </div>
                         <h3 class="main_text_card">ELLERY X M'O CAPSULE</h3>
                         <p class="main_paragraph_card">Known for her sculptural takes on traditional tailoring,
                             Australian
@@ -137,12 +258,11 @@
                     </div>
                 </div>
         </section>
-        <section class="сatalog">
+        <section class="сatalog_card">
             <div class="container">
                 <div class="catalog_numbering">
                     <h4>1 2 3 4 5 6.....20</h4>
                 </div>
-
             </div>
         </section>
         <section class="aside">

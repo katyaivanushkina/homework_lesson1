@@ -1,0 +1,87 @@
+.filter__button {
+  width: 360px;
+  margin-right: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+.filter__button summary {
+  display: block;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.filter__button summary::-webkit-details-marker {
+  display: none;
+}
+
+.filter__button > details > summary {
+  display: block;
+  text-decoration: none;
+  font-weight: 600;
+  color: #000000;
+  padding: 13px 16px;
+  z-index: 1;
+  position: relative;
+}
+
+.filter__button > details > summary svg {
+  margin-left: 10px;
+}
+
+.filter__button > details[open] > summary {
+  color: #F16D7F;
+}
+
+.filter__button > details[open] > summary svg {
+  fill: #F16D7F;
+}
+
+.filter__button > details[open] .filter__body {
+  padding: 43px 16px 16px;
+  width: 100%;
+  top: 0;
+  position: absolute;
+  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  background-color: #ffffff;
+}
+
+.filter__button > details[open] .filter__body details:not(:last-child) {
+  margin-bottom: 18px;
+}
+
+.filter__button > details[open] .filter__body details summary {
+  color: #626262;
+  border-left: 5px solid #F16D7F;
+  border-bottom: 1px solid #ebebeb;
+  display: block;
+  padding: 10px 16px;
+}
+
+.filter__button > details[open] .filter__body details ul {
+  list-style: none;
+  padding: 24px 16px;
+}
+
+.filter__button > details[open] .filter__body details ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.filter__button > details[open] .filter__body details ul li a {
+  text-decoration: none;
+  color: #626262;
+}
+
+.filter__button > details[open] .filter__body details ul li a:hover {
+  color: #000000;
+}
+
+.filter__button > details[open] .filter__body details[open] {
+  margin-bottom: 0;
+}
+
+.filter__button > details[open] .filter__body details[open] summary {
+  color: #F16D7F;
+}
+/*# sourceMappingURL=filter.css.map */

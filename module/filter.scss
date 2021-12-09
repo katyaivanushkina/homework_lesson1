@@ -1,0 +1,105 @@
+$color-pink: #F16D7F;
+$color-graphit: #222222;
+$color-grey: #E8E8E8;
+$color-white: #ffffff;
+$color-black: #000000;
+$font-family: 'Lato',
+sans-serif;
+
+.filter {
+  &__button {
+    width: 360px;
+    margin-right: 30px;
+    position: relative;
+    z-index: 1;
+
+    summary {
+      display: block;
+      text-transform: uppercase;
+      cursor: pointer;
+
+      &::-webkit-details-marker {
+        display: none;
+      }
+    }
+
+    > details {
+      > summary {
+        display: block;
+        text-decoration: none;
+        font-weight: 600;
+        color: $color-black;
+        padding: 13px 16px;
+        z-index: 1;
+        position: relative;
+
+        svg {
+          margin-left: 10px;
+        }
+      }
+
+      &[open] {
+        >summary {
+          color: $color-pink;
+
+          svg {
+            fill: $color-pink;
+          }
+        }
+
+        .filter__body {
+          padding: 43px 16px 16px;
+          width: 100%;
+          top: 0;
+          position: absolute;
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+          background-color:  #ffffff;
+
+          details {
+            &:not(:last-child) {
+              margin-bottom: 18px;
+            }
+
+            summary {
+              color: lighten($color-graphit, 25%);
+              border-left: 5px solid $color-pink;
+              border-bottom: 1px solid lighten($color-graphit, 79%);
+              display: block;
+              padding: 10px 16px;
+            }
+
+            ul {
+              list-style: none;
+              padding: 24px 16px;
+
+              li {
+                &:not(:last-child) {
+                  margin-bottom: 10px;
+                }
+
+                a {
+                  text-decoration: none;
+                  color: lighten($color-graphit, 25%);
+
+                  &:hover {
+                    color: $color-black;
+                  }
+                }
+              }
+            }
+
+            &[open] {
+              margin-bottom: 0;
+
+              summary {
+                color: $color-pink;
+              }
+            }
+          }
+
+        }
+      }
+    }
+  }
+}
+
